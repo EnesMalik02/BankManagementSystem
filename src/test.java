@@ -14,28 +14,6 @@ public class test {
 //                double balance = transactions.getUserBalance(1);
 //                System.out.println(balance);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             } catch (SQLException e) {
                 e.printStackTrace();
                 System.out.println("Veri ekleme başarısız!");

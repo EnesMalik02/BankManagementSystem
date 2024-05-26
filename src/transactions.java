@@ -3,41 +3,41 @@ import java.sql.*;
 public class transactions {
     static Connection connection = DatabaseConnection.getConnection();
 
-    public static String Balance(int id) {
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
-        String balance = null;
-        try {
-            // Bağlantıyı al
-            connection = DatabaseConnection.getConnection();
-            // Statement nesnesini oluştur
-            statement = connection.createStatement();
-
-            // ID'si 2 olan kullanıcının adını almak için SQL sorgusu
-            String sql = "select balance FROM proje.veriler WHERE id =" + id + ";";
-            resultSet = statement.executeQuery(sql);
+//    public static String Balance(int id) {
+//        Connection connection = null;
+//        Statement statement = null;
+//        ResultSet resultSet = null;
+//        String balance = null;
+//        try {
+//            // Bağlantıyı al
+//            connection = DatabaseConnection.getConnection();
+//            // Statement nesnesini oluştur
+//            statement = connection.createStatement();
 //
-            if (resultSet.next()) {
-                balance = resultSet.getString("balance");
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-            System.out.println("Kullanıcı adı alınamadı!");
-        } finally {
-            // Kaynakları kapat
-            try {
-                if (resultSet != null) resultSet.close();
-                if (statement != null) statement.close();
-                if (connection != null) connection.close();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("Bakiye: " + balance);
-        return balance;
-    }
+//            // ID'si 2 olan kullanıcının adını almak için SQL sorgusu
+//            String sql = "select balance FROM proje.veriler WHERE id =" + id + ";";
+//            resultSet = statement.executeQuery(sql);
+////
+//            if (resultSet.next()) {
+//                balance = resultSet.getString("balance");
+//            }
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//            System.out.println("Kullanıcı adı alınamadı!");
+//        } finally {
+//            // Kaynakları kapat
+//            try {
+//                if (resultSet != null) resultSet.close();
+//                if (statement != null) statement.close();
+//                if (connection != null) connection.close();
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        System.out.println("Bakiye: " + balance);
+//        return balance;
+//    }
 
     public static void deposit(int id, int amount) {
         Connection connection = null;
