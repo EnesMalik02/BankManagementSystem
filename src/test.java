@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class Main {
+public class test {
     public static void main(String[] args) {
 // Get a connection to the database
         Connection connection = DatabaseConnection.getConnection();
