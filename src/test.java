@@ -9,7 +9,6 @@ public class test {
         if (connection != null) {
             try {
                 Statement statement = connection.createStatement();
-
 //                transactions.Balance(1);
 //                userOperations.createUser("Ahmet", "1234");
 //                double balance = transactions.getUserBalance(1);
