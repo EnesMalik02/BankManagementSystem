@@ -1,4 +1,5 @@
 # Example MySQL Table and Queries
+![image](https://github.com/EnesMalik02/BankManagementSystem/assets/89933069/97eaba9c-89c3-4e79-aa0d-75b09b51a28f)
 
 
 ### Gets user's balance
