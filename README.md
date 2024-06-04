@@ -1,3 +1,6 @@
+> [!WARNING]
+> You should configure DatabaseConnection.java file 
+
 > [!NOTE]
 > To run the program you must run the App.java file
 
